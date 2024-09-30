@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+}
+.container {
+  display: grid;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: 5px solid gray;
+  width: 550px;
+  /* height: 450px; */
+  padding: 5px;
+  margin: auto;
+}
+#inputtext {
+  width: 320px;
+  height: 70px;
+  margin: 20px 10px;
+  font-size: 25px;
+  text-align: right;
+  border-radius: 5px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  /* gap: 5px; */
+}
+
+.btn {
+  border: 0.5px solid gray;
+  line-height: 70px;
+  font-size: 25px;
+  background: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(151, 151, 253);
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+

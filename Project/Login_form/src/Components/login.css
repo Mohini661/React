@@ -1,0 +1,6 @@
+.l-form{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
