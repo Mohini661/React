@@ -8,10 +8,11 @@ function App() {
   const [inputData, setInputData] = useState([]);
 
   const inputHandler = (name, email, phone) => {
-    const newarray = [...inputData, { name: name, email: email, phone: phone }];
-    setInputData(newarray);
+    setInputData((currentData) => [
+      ...currentData,
+      { name: name, email: email, phone: phone },
+    ]);
   };
-
   const deleteButtonHandler = (name) => {
     setInputData(inputData.filter((ele) => ele.name != name));
   };

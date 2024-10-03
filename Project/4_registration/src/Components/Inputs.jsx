@@ -1,52 +1,38 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Inputs = ({ onButtonClick }) => {
-  let [name, setName] = useState(" ");
-  let [email, setEmail] = useState("");
-  let [phone, setPhone] = useState();
-  const nameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const emailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const numberChange = (e) => {
-    setPhone(e.target.value);
-  };
+  let nameChange = useRef();
+  let emailChange = useRef();
+  let phoneChange = useRef();
   const SubmitButtonHandler = () => {
-    onButtonClick(name, email, phone);
-    setName("");
-    setEmail("");
-    setPhone("");
+    onButtonClick(
+      nameChange.current.value,
+      emailChange.current.value,
+      phoneChange.current.value
+    );
+    nameChange.current.value = "";
+    emailChange.current.value = "";
+    phoneChange.current.value = "";
   };
 
   return (
     <div className="container form-control">
       <div className="row">
         <div className="col-3  ">
-          <input
-            type="text"
-            placeholder="Enter your name"
-            onChange={nameChange}
-            value={name}
-          />
+          <input type="text" placeholder="Enter your name" ref={nameChange} />
         </div>
         <div className="col-3">
           <input
             type="email"
             placeholder="Enter your email"
-            onChange={emailChange}
-            value={email}
+            ref={emailChange}
           />
         </div>
         <div className="col-3">
           <input
             type="number"
             placeholder="Enter your mobile number"
-            onChange={numberChange}
-            value={phone}
+            ref={phoneChange}
           />
         </div>
         <div className="col-3">
