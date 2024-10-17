@@ -1,11 +1,13 @@
-import { useState, useRef } from "react";
+import { useContext, useRef } from "react";
+import { listContext } from "../Store/Context";
 
-const Inputs = ({ onButtonClick }) => {
+const Inputs = () => {
+  const { inputHandler } = useContext(listContext);
   let nameChange = useRef();
   let emailChange = useRef();
   let phoneChange = useRef();
   const SubmitButtonHandler = () => {
-    onButtonClick(
+    inputHandler(
       nameChange.current.value,
       emailChange.current.value,
       phoneChange.current.value
@@ -19,13 +21,19 @@ const Inputs = ({ onButtonClick }) => {
     <div className="container form-control">
       <div className="row">
         <div className="col-3  ">
-          <input type="text" placeholder="Enter your name" ref={nameChange} />
+          <input
+            type="text"
+            placeholder="Enter your name"
+            ref={nameChange}
+            className="form-control"
+          />
         </div>
         <div className="col-3">
           <input
             type="email"
             placeholder="Enter your email"
             ref={emailChange}
+            className="form-control"
           />
         </div>
         <div className="col-3">
@@ -33,6 +41,7 @@ const Inputs = ({ onButtonClick }) => {
             type="number"
             placeholder="Enter your mobile number"
             ref={phoneChange}
+            className="form-control"
           />
         </div>
         <div className="col-3">
