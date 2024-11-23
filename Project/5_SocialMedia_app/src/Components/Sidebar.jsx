@@ -1,6 +1,7 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ page, setPage }) => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
@@ -17,22 +18,46 @@ const Sidebar = () => {
       </a>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
-          <a href="#" className="nav-link active" aria-current="page">
+        <NavLink
+          to={"/"}
+          className={`nav-item ${(e) => {
+            return e.isActive ? "active" : "";
+          }}`}
+          //  onClick={()=>setPage("Home")}
+        >
+          Home
+          {/* <a
+            href="#"
+            className={`nav-link text-white ${page == "Home" && "active"}`}
+            aria-current="page"
+          >
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#home"></use>
             </svg>
             Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
+          </a> */}
+        </NavLink>
+        <Link
+          to={"/createpost"}
+          className={(e) => {
+            return e.isActive ? "bg-primary" : "";
+          }}
+          // onClick={() => setPage("Create Post")}
+        >
+          {" "}
+          Create Post
+          {/* <a
+            href="#"
+            className={`nav-link text-white ${
+              page == "Create Post" && "active"
+            }`}
+          >
             <svg className="bi pe-none me-2" width="16" height="16">
               <use xlinkHref="#speedometer2"></use>
             </svg>
             Create Post
-          </a>
-        </li>
+          </a> */}
+        </Link>
       </ul>
       <hr />
       <div className="dropdown">

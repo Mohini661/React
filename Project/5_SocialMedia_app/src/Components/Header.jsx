@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -62,9 +63,10 @@ const Header = () => {
             </form>
 
             <div className="text-end">
+              <Link to={"/login"}>
               <button type="button" className="btn btn-outline-light me-2">
                 Login
-              </button>
+              </button></Link>
               <button type="button" className="btn btn-warning">
                 Sign-up
               </button>

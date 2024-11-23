@@ -1,0 +1,18 @@
+.main-container {
+  display: flex;
+}
+.content {
+  width: 100%;
+}
+.cards {
+  display: flex-col;
+
+}
+.create-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.form-container {
+  padding: 20px;
+}

@@ -1,7 +1,7 @@
 import { useContext, useRef } from "react";
 import { listContext } from "../Store/Context";
 
-const Inputs = () => {
+const InputData = () => {
   const { inputHandler } = useContext(listContext);
   let nameChange = useRef();
   let emailChange = useRef();
@@ -18,7 +18,7 @@ const Inputs = () => {
   };
 
   return (
-    <div className="container form-control">
+    <div className="container form-control mb-4">
       <div className="row">
         <div className="col-3  ">
           <input
@@ -53,4 +53,4 @@ const Inputs = () => {
     </div>
   );
 };
-export default Inputs;
+export default InputData;

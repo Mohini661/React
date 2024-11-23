@@ -2,11 +2,9 @@ import Title from "./Components/Title";
 import ToDoTask from "./Components/ToDoTask";
 import ToDoItem from "./Components/ToDoItem";
 import { useState } from "react";
-import Demo from "./Components/demo";
-import { toDoListContext } from "./store/hooks";
+import { toDoListContext } from "./store/Context";
 
 function App() {
-  // const todolist = [{name:"Assignment",date:"10/09/2024"},{name:"Project",date:"11/09/2024"}]
   let [toDoList, setToDoList] = useState([]);
   const addItemHandler = (name, date) => {
     const newArray = [...toDoList, { name: name, date: date }];
@@ -26,7 +24,6 @@ function App() {
           toDoItemList={toDoList}
           deleteButtonClick={deleteTaskHandler}
         ></ToDoItem>
-        <Demo />
       </toDoListContext.Provider>
     </center>
   );

@@ -29,7 +29,7 @@ const ListItemContextProvider = (props) => {
   const deleteButtonHandler = (name) => {
     const removeData = {
       type: "Remove_Data",
-      name: name,
+      name: name, 
     };
     dispatcherList(removeData);
   };

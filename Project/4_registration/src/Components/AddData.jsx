@@ -4,7 +4,7 @@ import { useContext } from "react";
 const AddData = ({ name, email, phone }) => {
   const { deleteButtonHandler } = useContext(listContext);
   return (
-    <div className="container form-control mt-4">
+    <div className="container form-control">
       <div className="row">
         <div className="col-3">
           <span>{name}</span>
