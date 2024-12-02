@@ -9,6 +9,7 @@ import Products from "./components/Products.jsx";
 import Shop from "./components/Shop.jsx";
 import Contact from "./components/Contact.jsx";
 import Featured from "./components/Featured.jsx";
+import ProductDetail from "./components/ProductDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Products /> },
       { path: "/shop", element: <Shop /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/product/:id", element: <ProductDetail /> },
     ],
   },
 ]);

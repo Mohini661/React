@@ -8,78 +8,78 @@ import cat6 from "../assets/img/cat-6.jpg";
 
 const Categories = () => {
   return (
-    <div class="container-fluid pt-5">
-      <div class="row px-xl-5 pb-3">
-        <div class="col-lg-4 col-md-6 pb-1">
+    <div className="container-fluid pt-5">
+      <div className="row px-xl-5 pb-3">
+        <div className="col-lg-4 col-md-6 pb-1">
           <div
-            class="cat-item d-flex flex-column border mb-4"
+            className="cat-item d-flex flex-column border mb-4"
             style={{ padding: "30px" }}
           >
-            <p class="text-right">15 Products</p>
-            <a href="" class="cat-img position-relative overflow-hidden mb-3">
-              <img class="img-fluid" src={cat1} alt="" />
+            <p className="text-right">15 Products</p>
+            <a href="" className="cat-img position-relative overflow-hidden mb-3">
+              <img className="img-fluid" src={cat1} alt="" />
             </a>
-            <h5 class="font-weight-semi-bold m-0">Men's dresses</h5>
+            <h5 className="font-weight-semi-bold m-0">Men's dresses</h5>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 pb-1">
+        <div className="col-lg-4 col-md-6 pb-1">
           <div
-            class="cat-item d-flex flex-column border mb-4"
+            className="cat-item d-flex flex-column border mb-4"
             style={{ padding: "30px" }}
           >
-            <p class="text-right">15 Products</p>
-            <a href="" class="cat-img position-relative overflow-hidden mb-3">
-              <img class="img-fluid" src={cat2} alt="" />
+            <p className="text-right">15 Products</p>
+            <a href="" className="cat-img position-relative overflow-hidden mb-3">
+              <img className="img-fluid" src={cat2} alt="" />
             </a>
-            <h5 class="font-weight-semi-bold m-0">Women's dresses</h5>
+            <h5 className="font-weight-semi-bold m-0">Women's dresses</h5>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 pb-1">
+        <div className="col-lg-4 col-md-6 pb-1">
           <div
-            class="cat-item d-flex flex-column border mb-4"
+            className="cat-item d-flex flex-column border mb-4"
             style={{ padding: "30px" }}
           >
-            <p class="text-right">15 Products</p>
-            <a href="" class="cat-img position-relative overflow-hidden mb-3">
-              <img class="img-fluid" src={cat3} alt="" />
+            <p className="text-right">15 Products</p>
+            <a href="" className="cat-img position-relative overflow-hidden mb-3">
+              <img className="img-fluid" src={cat3} alt="" />
             </a>
-            <h5 class="font-weight-semi-bold m-0">Baby's dresses</h5>
+            <h5 className="font-weight-semi-bold m-0">Baby's dresses</h5>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 pb-1">
+        <div className="col-lg-4 col-md-6 pb-1">
           <div
-            class="cat-item d-flex flex-column border mb-4"
+            className="cat-item d-flex flex-column border mb-4"
             style={{ padding: "30px" }}
           >
-            <p class="text-right">15 Products</p>
-            <a href="" class="cat-img position-relative overflow-hidden mb-3">
-              <img class="img-fluid" src={cat4} alt="" />
+            <p className="text-right">15 Products</p>
+            <a href="" className="cat-img position-relative overflow-hidden mb-3">
+              <img className="img-fluid" src={cat4} alt="" />
             </a>
-            <h5 class="font-weight-semi-bold m-0">Accerssories</h5>
+            <h5 className="font-weight-semi-bold m-0">Accerssories</h5>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 pb-1">
+        <div className="col-lg-4 col-md-6 pb-1">
           <div
-            class="cat-item d-flex flex-column border mb-4"
+            className="cat-item d-flex flex-column border mb-4"
             style={{ padding: "30px" }}
           >
-            <p class="text-right">15 Products</p>
-            <a href="" class="cat-img position-relative overflow-hidden mb-3">
-              <img class="img-fluid" src={cat5} alt="" />
+            <p className="text-right">15 Products</p>
+            <a href="" className="cat-img position-relative overflow-hidden mb-3">
+              <img className="img-fluid" src={cat5} alt="" />
             </a>
-            <h5 class="font-weight-semi-bold m-0">Bags</h5>
+            <h5 className="font-weight-semi-bold m-0">Bags</h5>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 pb-1">
+        <div className="col-lg-4 col-md-6 pb-1">
           <div
-            class="cat-item d-flex flex-column border mb-4"
+            className="cat-item d-flex flex-column border mb-4"
             style={{ padding: "30px" }}
           >
-            <p class="text-right">15 Products</p>
-            <a href="" class="cat-img position-relative overflow-hidden mb-3">
-              <img class="img-fluid" src={cat6} alt="" />
+            <p className="text-right">15 Products</p>
+            <a href="" className="cat-img position-relative overflow-hidden mb-3">
+              <img className="img-fluid" src={cat6} alt="" />
             </a>
-            <h5 class="font-weight-semi-bold m-0">Shoes</h5>
+            <h5 className="font-weight-semi-bold m-0">Shoes</h5>
           </div>
         </div>
       </div>
