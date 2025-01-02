@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "uname": "Mohini",
+      "email": "mohini@gmail.com",
+      "phone": "6789654328",
+      "password": "mohini@123",
+      "cpassword": "mohini@123",
+      "id": "439e"
+    },
+    {
+      "id": "3173"
+    },
+    {
+      "id": "c653",
+      "uname": "abc",
+      "email": "abc@gmail.com",
+      "phone": "3456789765",
+      "password": "abc123",
+      "cpassword": "abc123"
+    },
+    {
+      "id": "553a",
+      "uname": "chintan",
+      "email": "ch",
+      "phone": "",
+      "password": "",
+      "cpassword": ""
+    },
+    {
+      "id": "a800",
+      "uname": "chintan",
+      "email": "chint2@gmail.com",
+      "phone": "6754387654",
+      "password": "chin123",
+      "cpassword": "chin123"
+    }
+  ]
+}
