@@ -27,30 +27,21 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg"></img>
-        </SwiperSlide>
-        <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=550&dpr=1"
+            src="https://cdn.pixabay.com/photo/2024/02/20/08/00/shopping-8584891_1280.jpg"
             alt="image 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/1227513/pexels-photo-1227513.jpeg"
+            src="https://cdn.pixabay.com/photo/2022/12/03/21/08/hd-wallpaper-7633394_960_720.jpg"
             alt="image 3"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140604_1280.jpg"
             alt="image4"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="image5"
           />
         </SwiperSlide>
       </Swiper>
